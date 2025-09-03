@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5e9d7;
+  color: #333;
+  border: 15px solid #cbbe8a;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d35400;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 0px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.subtitle {
+  color: #d35400;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #4b2c20;
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e55039;
+}
+
+.hero-image img {
+  width: 400px;
+}
+
+nav ul li a.button {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a.button:hover {
+  background: #a84300;
+}
+
+/* Profile Page */
+.profile {
+  display: flex;
+  gap: 40px;
+  padding: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 300px;
+  border-radius: 15px;
+  border: 5px solid #8B4513;
+}
+
+.profile-image .caption {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+  font-style: italic;
+}
+
+.profile-text {
+  flex: 2;
+  max-width: 700px;
+}
+
+.profile-text h1 {
+  font-size: 36px;
+  color: #4b2c20;
+  margin-bottom: 20px;
+}
+
+.profile-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.profile-text h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #d35400;
+}
+
+.biodata {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.biodata li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.creations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.creation-card {
+  background: #fff;
+  border: 3px solid #8B4513;
+  border-radius: 12px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.creation-card img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-position: 50% 20%;
+}
+
+.creation-card h3 {
+  font-size: 18px;
+  color: #4b2c20;
+  margin-bottom: 8px;
+}
+
+.creation-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Contact Page */
+.contact {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border: 3px solid #8B4513;
+  border-radius: 12px;
+}
+
+.contact h1 {
+  text-align: center;
+  color: #4b2c20;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d35400;
+}
+
+.contact-form .btn {
+  background: #d35400;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form .btn:hover {
+  background: #a84300;
+}
+
